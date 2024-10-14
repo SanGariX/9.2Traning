@@ -1,0 +1,113 @@
+body{
+    background-color: gray;
+}
+/* .js-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.item{
+    border-radius: 5px;
+    aspect-ratio: 1;
+    width: 50px;
+    border: 2px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+} */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+/* .bigred{
+	font-size: 20px;
+	color: red;
+} */
+ body{
+    font-size: clamp(10px,3vw,25px);
+ }
+ button{
+    padding: 0.5vw 2vw;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+select{
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+img{
+    width: 20vw;
+}
+.js-search{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    align-items: center;
+}
+@media (max-width:400px){
+    .js-search{
+        flex-wrap: wrap;
+        max-width: 200px;
+        margin: 0 auto;
+        gap: 10px;
+    }
+}
+.js-list{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 2vw;
+    padding: 2vw;
+    margin: 2vw auto;
+}
+.list__item{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap:2vw;
+    align-items: center;
+    padding: 2vw;
+}
+.list__item p{
+    text-wrap: nowrap;
+}
